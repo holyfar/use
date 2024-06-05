@@ -31,7 +31,6 @@
   "workbench.list.smoothScrolling": true,
   "workbench.editor.empty.hint": "hidden",
   "workbench.startupEditor": "none",
-  "workbench.sideBar.location": "right",
 
   // Editor
   "editor.fontSize": 16,

@@ -13,7 +13,6 @@ brew "bat"
 brew "jq"
 brew "fnm"
 brew "ripgrep"
-brew "im-select"
 brew "MonitorControl"
 brew "zoxide"
 
