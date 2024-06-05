@@ -63,23 +63,11 @@
     "source.organizeImports": "never"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[c][cpp]": {
-    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
-  },
-  "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer"
-  },
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "[yaml]": {
     "editor.formatOnSave": false
-  },
-  "[toml]": {
-    "editor.defaultFormatter": "tamasfe.even-better-toml"
-  },
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
   },
   "[fish]": {
     "editor.defaultFormatter": "bmalehorn.vscode-fish"
@@ -155,7 +143,6 @@
     "typescript": "bun",
     "python": "python3"
   },
-  "C_Cpp.intelliSenseEngine": "disabled",
   "errorLens.excludeBySource": ["eslint", "cSpell"],
   "eslint.format.enable": true,
   "eslint.experimental.useFlatConfig": true,
@@ -166,201 +153,8 @@
   "prettier.arrowParens": "avoid",
   "prettier.bracketSpacing": true,
   "prettier.trailingComma": "all",
-  "extensions.experimental.affinity": {
-    "vscodevim.vim": 1
-  },
   "gitlens.codeLens.enabled": false,
   "cSpell.language": "en,en-US",
   "cSpell.allowCompoundWords": true,
-  "prisma.showPrismaDataPlatformNotification": false,
-  "github.copilot.editor.enableAutoCompletions": true,
-
-  // Vim
-  "vim.leader": ",",
-  "vim.useSystemClipboard": true,
-  "vim.incsearch": true,
-  "vim.hlsearch": true,
-  "vim.foldfix": true,
-  "vim.showMarksInGutter": true,
-  // auto switch input method    im-select https://github.com/daipeihust/im-select
-  "vim.autoSwitchInputMethod.enable": true,
-  "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",
-  "vim.autoSwitchInputMethod.obtainIMCmd": "/Users/xlsama/bin/im-select",
-  "vim.autoSwitchInputMethod.switchIMCmd": "/Users/xlsama/bin/im-select com.apple.keylayout.ABC {im}",
-  "vim.handleKeys": {
-    "<C-a>": false,
-    "<C-e>": false,
-    "<C-f>": false,
-    "<C-b>": false
-  },
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "k"],
-      "after": ["<Esc>"]
-    }
-  ],
-  "vim.normalModeKeyBindings": [
-    {
-      "before": ["<space>"],
-      "after": [":"]
-    },
-    {
-      "before": ["<C-n>"],
-      "commands": [":nohl"],
-      "silent": true
-    },
-    {
-      "before": ["u"],
-      "commands": ["undo"],
-      "silent": true
-    },
-    {
-      "before": ["<C-r>"],
-      "commands": ["redo"],
-      "silent": true
-    },
-    {
-      "before": ["L"],
-      "after": ["$"]
-    },
-    {
-      "before": ["H"],
-      "after": ["^"]
-    },
-    {
-      "before": ["<C-d>"],
-      "after": ["1", "0", "j", "z", "z"]
-    },
-    {
-      "before": ["<C-u>"],
-      "after": ["1", "0", "k", "z", "z"]
-    },
-    {
-      "before": ["<C-h>"],
-      "commands": ["workbench.action.navigateLeft"],
-      "silent": true
-    },
-    {
-      "before": ["<C-l>"],
-      "commands": ["workbench.action.navigateRight"],
-      "silent": true
-    },
-    {
-      "before": ["<leader>", "v"],
-      "after": ["V"]
-    },
-    {
-      "before": ["g", "["],
-      "commands": ["editor.fold"],
-      "when": "editorTextFocus && foldingEnabled"
-    },
-    {
-      "before": ["g", "]"],
-      "commands": ["editor.unfold"],
-      "when": "editorTextFocus && foldingEnabled"
-    },
-    {
-      "before": ["g", "t"],
-      "commands": ["editor.emmet.action.matchTag"],
-      "when": "editorTextFocus"
-    }
-  ],
-  "vim.visualModeKeyBindings": [
-    {
-      "before": ["L"],
-      "after": ["$"]
-    },
-    {
-      "before": ["H"],
-      "after": ["^"]
-    },
-    {
-      "before": [">"],
-      "commands": ["editor.action.indentLines"],
-      "silent": true
-    },
-    {
-      "before": ["<"],
-      "commands": ["editor.action.outdentLines"],
-      "silent": true
-    }
-  ],
-  "vim.operatorPendingModeKeyBindings": [
-    {
-      "before": ["L"],
-      "after": ["$"]
-    },
-    {
-      "before": ["H"],
-      "after": ["^"]
-    }
-  ],
-  "vim.operatorPendingModeKeyBindingsNonRecursive": [
-    {
-      "before": ["w"],
-      "after": ["i", "w"]
-    },
-    {
-      "before": ["("],
-      "after": ["i", "("]
-    },
-    {
-      "before": ["["],
-      "after": ["i", "["]
-    },
-    {
-      "before": ["{"],
-      "after": ["i", "{"]
-    },
-    {
-      "before": ["'"],
-      "after": ["i", "'"]
-    },
-    {
-      "before": ["\""],
-      "after": ["i", "\""]
-    },
-    {
-      "before": ["`"],
-      "after": ["i", "`"]
-    },
-    {
-      "before": ["<"],
-      "after": ["i", "<"]
-    }
-  ],
-  "vim.visualModeKeyBindingsNonRecursive": [
-    {
-      "before": ["w"],
-      "after": ["i", "w"]
-    },
-    {
-      "before": ["("],
-      "after": ["i", "("]
-    },
-    {
-      "before": ["["],
-      "after": ["i", "["]
-    },
-    {
-      "before": ["{"],
-      "after": ["i", "{"]
-    },
-    {
-      "before": ["'"],
-      "after": ["i", "'"]
-    },
-    {
-      "before": ["\""],
-      "after": ["i", "\""]
-    },
-    {
-      "before": ["`"],
-      "after": ["i", "`"]
-    },
-    {
-      "before": ["<"],
-      "after": ["i", "<"]
-    }
-  ]
+  "Codegeex.Privacy": true
 }
