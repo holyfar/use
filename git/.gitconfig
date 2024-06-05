@@ -1,14 +1,12 @@
 [user]
-	name = xlsama
-	email = im.xlsama@gmail.com
+	name = wangwenyuan
+	email = 294162304@qq.com
 [pull]
 	rebase = false
 [core]
-	excludesfile = /Users/xlsama/.gitignore
+	excludesfile = /Users/edy/.gitignore
 	editor = nvim
 [init]
 	defaultBranch = main
-[includeIf "gitdir:/Users/xlsama/w/"]
-  path = ~/.gitconfig_work
 [url "https://github.com/"]
 	insteadOf = git://github.com/
